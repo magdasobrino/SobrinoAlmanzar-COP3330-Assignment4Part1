@@ -18,7 +18,7 @@ public class ToDoExecution {
         //create class date format//
         //Date format YYYY-MM-DD//
         //parse date string//
-        // if incorrect prompt user to reenter the date on bar//
+        // if incorrect prompt user to reenter the date on date picker//
 
         return true;
     }

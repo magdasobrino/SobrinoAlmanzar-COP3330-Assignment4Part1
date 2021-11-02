@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class ToDoExecution {
+
+- String item
+    - String Description
+    - String Due Date
+    - boolean complete
+
+    + getItem();
+    + addItem();
+    + deleteItem();
+    + getDescription();
+    + editDescription();
+    + getDueDate();
+    + editDueDate();
+    + MarkIncomplete();
+    + MarkComplete();
+
+}
+Application--o ToDoExecution
+
+@enduml

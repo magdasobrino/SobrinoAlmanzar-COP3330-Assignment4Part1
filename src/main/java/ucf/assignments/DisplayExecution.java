@@ -5,6 +5,8 @@
 
 package ucf.assignments;
 
+import java.util.ArrayList;
+
 public class DisplayExecution {
 
     public void addList(){
@@ -36,28 +38,40 @@ public class DisplayExecution {
     }
 
     public void SaveOneListClicked(){
-        //User will Save All list"
+        //User will Save All list
+        //output a header for each key value to the txt file
+        //output each list item to the txt file
+
     }
 
     public void OpenOneListClicked(){
         //User will open one list to make updates//
+        //read in file information
+        //parse file information into a new map of To Do List
+        //return the new lists
+        //show all list details, due date, status description//
 
     }
     public void OpenAllListClicked(){
         //User will open all list to make updates//
+        //read in file information
+        //parse file information into a new map of To Do List
+        //return the new lists
+        //show all list details, due date, status description using txt.files //
+
 
     }
 
     public void DisplayIncomplete(){
         // All existing items
-        // Incomplete ones
+        // Incomplete items
         // with if statements choose what to display depending on their option
 
     }
 
     public void DisplayComplete(){
         // All existing items
-        // Complete ones
+        // Complete items
         // with if statements choose what to display depending on their option
 
     }
@@ -68,6 +82,7 @@ public class DisplayExecution {
     }
     public void CheckStatus(){
         //display list status
+        // incomplete or complete
     }
 
 }

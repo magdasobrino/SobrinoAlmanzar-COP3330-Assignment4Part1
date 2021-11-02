@@ -1,0 +1,8 @@
+@startuml
+
+class App{
+main()
+start()
+}
+Application--o App
+@enduml

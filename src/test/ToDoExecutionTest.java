@@ -14,6 +14,7 @@ public class ToDoExecutionTest {
     @Test
     void addItem(){
         // add the item into the list
+        //add a new item to the items array list
         // print the list
     }
 
@@ -21,14 +22,15 @@ public class ToDoExecutionTest {
     void deleteItem(){
         // Set up the items and delete for one of them
         // print out the list to see if it was deleted
-        // compare
+        //delete  item fromt the items array list
     }
 
     @Test
     public void getDescription(){
-        // for loop until 256 items
+        // for loop until 100 items
         // actual and expected a name for the description
         //print description
+        //
     }
 
     @Test

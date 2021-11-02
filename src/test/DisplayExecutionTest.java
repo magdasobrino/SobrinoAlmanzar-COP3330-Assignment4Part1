@@ -14,7 +14,7 @@ public class DisplayExecutionTest {
         // Set up the lists
         // add one into the array
         // print out the list to see if it was added
-        // compare
+
     }
 
     @Test
