@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="HelpWindow"
-        xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ucf.assignments.HelpButton"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane fx:id="Help" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.HelpButton">
     <children>
-        <TextArea fx:id="HelpText" layoutX="7.0" layoutY="5.0" prefHeight="389.0" prefWidth="587.0" />
+      <TextArea layoutY="22.0" prefHeight="330.0" prefWidth="608.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </TextArea>
     </children>
 
 </AnchorPane>
-
-

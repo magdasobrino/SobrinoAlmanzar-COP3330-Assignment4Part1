@@ -5,11 +5,9 @@
 
 package ucf.assignments;
 
-import java.awt.event.ActionEvent;
 import java.io.*;
 import java.net.URL;
 import java.time.LocalDate;
-import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.StringTokenizer;
 
@@ -26,7 +24,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.DragEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -74,6 +71,7 @@ public class Controller implements Initializable {
     FileChooser fileChooser= new FileChooser();
     public ObservableList<Item> TodoList = FXCollections.observableArrayList();
     private LocalDate localDate;
+
 
     @Override
     public void initialize (URL location, ResourceBundle resources){
@@ -151,11 +149,6 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    void Delete(ActionEvent event){
-        int SelectID= Table.getSelectionModel().getSelectedIndex();
-        Table.getItems().remove(SelectID);
-    }
-
     public void Delete(javafx.event.ActionEvent actionEvent) {
         Item selectedItem = Table.getSelectionModel().getSelectedItem();
         Table.getItems().remove(selectedItem);
@@ -178,19 +171,6 @@ public class Controller implements Initializable {
         return temp;
     }
 
-    @FXML
-    void Complete_CB(ActionEvent event) {
-        int index= Table.getSelectionModel().getSelectedIndex();
-        if(Complete_CB.isSelected()){
-            if(TodoList.get(index).ItemIsComplete()==true){
-                TodoList.get(index).setComplete(false);
-            }else{
-                TodoList.get(index).setComplete(true);
-            }
-        }
-        Table.refresh();
-    }
-
 
     @FXML
     public void Complete_CB(){
@@ -204,7 +184,6 @@ public class Controller implements Initializable {
         }
         Table.refresh();
     }
-
 
     @FXML
     void Clear(javafx.event.ActionEvent actionEvent) {
@@ -277,7 +256,7 @@ public class Controller implements Initializable {
             {
                 //If the status is true; we want to write complete and not boolean
                 if(TodoList.get(i).ItemIsComplete()){
-                    status = "Completed";
+                    status = "Complete";
                 }
                 //Is false so is Incomplete
                 else{
