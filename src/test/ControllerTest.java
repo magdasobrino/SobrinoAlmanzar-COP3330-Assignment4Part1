@@ -6,8 +6,9 @@
 package ucf.assignments.test;
 
 import org.testng.annotations.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class DisplayExecutionTest {
+public class ControllerTest {
 
     @Test
     public void addList() {
@@ -69,6 +70,14 @@ public class DisplayExecutionTest {
     @Test
     public void CheckStatus(){
         // display list status, incomplete or complete
+    }
+
+    @Test
+    public void Display(){
+        //if list is complete or incomplete
+        //compare displayed items//
+        //compare all of the items displayed
+
     }
 
 }

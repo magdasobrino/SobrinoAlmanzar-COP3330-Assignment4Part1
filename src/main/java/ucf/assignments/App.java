@@ -4,34 +4,39 @@
  */
 
 package ucf.assignments;
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.IOException;
-import java.util.Objects;
 
-    public class App extends javafx.application.Application {
+import java.net.URL;
+import java.util.ArrayList;
 
-        @Override
-        public void start(Stage stage) throws Exception{
-            Parent root = FXMLLoader.load(getClass().getResource("ToDoApp.fxml"));
+
+public class App extends Application {
+    public static ArrayList<Item> myList;
+
+
+
+    @Override
+    public void start(Stage stage) throws Exception {
+
+            URL url = getClass().getClassLoader().getResource("example.fxml");
+            Parent root = FXMLLoader.load(url);
 
             Scene scene = new Scene(root);
 
-            stage.setScene(scene);
             stage.setTitle("To Do App");
+            stage.setScene(scene);
             stage.show();
 
-        }
-        public static void main(String[] args) {
-        /*
-        create To do App
-         */
+    }
+        public static void main (String[]args){
+
             launch(args);
 
         }
     }
-
 
 

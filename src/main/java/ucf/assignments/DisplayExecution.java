@@ -5,20 +5,36 @@
 
 package ucf.assignments;
 
-import java.util.ArrayList;
+import javafx.fxml.FXML;
+import javafx.scene.control.ListView;
+
+import java.util.List;
 
 public class DisplayExecution {
 
+    @FXML
+    ListView<Item> displayAllitems;
+
+    public void loadItems(List<Item> items)
+    {
+        displayAllitems.getItems().addAll(items);
+    }
+
+
+    @FXML
     public void addList(){
         // User by clicking the "add" button must be able to add a new to-do list
         // create a new array
     }
 
+
+    @FXML
     public void deleteList(){
         // User by clicking the "delete" button must be able to delete the to-do list that it's been displayed
         // delete from the list
     }
 
+    @FXML
     public void EditTitle(){
         // User by clicking the "Edit Title" button must be able to edit the to-do list's title
         // The title will turn to editable mode and saved
@@ -59,7 +75,6 @@ public class DisplayExecution {
         //return the new lists
         //show all list details, due date, status description using txt.files //
 
-
     }
 
     public void DisplayIncomplete(){
@@ -83,6 +98,7 @@ public class DisplayExecution {
     public void CheckStatus(){
         //display list status
         // incomplete or complete
+
     }
 
 }
