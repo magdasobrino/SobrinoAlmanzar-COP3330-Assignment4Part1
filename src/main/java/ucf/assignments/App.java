@@ -22,7 +22,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-            URL url = getClass().getClassLoader().getResource("example.fxml");
+            URL url = getClass().getClassLoader().getResource("App.fxml");
             Parent root = FXMLLoader.load(url);
 
             Scene scene = new Scene(root);
